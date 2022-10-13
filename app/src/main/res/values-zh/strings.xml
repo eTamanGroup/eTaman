@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Etaman</string>
+    <string name="login_credentialbox_emailusername">电邮 / 昵称</string>
+    <string name="login_credentialbox_email">电邮</string>
+    <string name="login_credentialbox_username">昵称</string>
+    <string name="login_heading_login">登入</string>
+    <string name="login_heading_signup">注册</string>
+    <string name="login_forgotpassword_question">忘记密码</string>
+    <string name="login_traverse_signup_question">还没有账号？</string>
+    <string name="login_traverse_login_question">已经有账号？</string>
+    <string name="login_confirmation_title">已发送确认电邮</string>
+    <string name="login_confirmation_description">请点击网址完成注册</string>
+    <string name="login_traverse_login">返回登录</string>
+    <string name="login_heading_resetpassword">重置密码</string>
+    <string name="login_resetpassword_description_instructions">请填写账号电邮以完成注册程序</string>
+    <string name="login_resetpassword_emailaddress">电邮</string>
+    <string name="login_resetpassword_exampleemail">example@email.com</string>
+    <string name="login_resetpassword_sendinstructions">发送指示</string>
+    <string name="login_resetpassword_title">重值网址至</string>
+    <string name="login_resetpassword_description_furtherinstructions">请根据电邮里的网址完成密码重置</string>
+    <string name="home_request_title">请求</string>
+    <string name="home_events_title">活动</string>
+    <string name="general_weekdays">周日</string>
+    <string name="general_weekends">周末</string>
+    <string name="map_title">动态地图</string>
+    <string name="map_report_counter">报告</string>
+    <string name="general_date">日期:</string>
+    <string name="general_time">时间</string>
+    <string name="map_report_viewreport">查看报告</string>
+    <string name="map_createticket">做单</string>
+    <string name="map_report_reportas">报告</string>
+    <string name="map_report_anonymous">匿名</string>
+    <string name="map_report_selectcategory">选项目</string>
+    <string name="map_report_addmedia">添加图片 / 影片</string>
+    <string name="map_report_submit">呈交报告</string>
+    <string name="map_report_cancel">取消</string>
 </resources>
