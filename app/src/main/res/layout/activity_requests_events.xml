@@ -1,63 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/divTop"
         android:layout_width="match_parent"
-        android:layout_height="356dp"
-        android:background="@drawable/requests_events_gradient_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/divTop"
+            android:layout_width="match_parent"
+            android:layout_height="356dp"
+            android:background="@drawable/requests_events_gradient_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/lblRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Requests"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.149"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/ScrollView3"
+                android:layout_width="389dp"
+                android:layout_height="290dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lblRequest">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="236dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ScrollView3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/divRequest1"
+                        android:layout_width="237dp"
+                        android:layout_height="234dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/request_container">
+
+
+                        <TextView
+                            android:id="@+id/lblRequestTitle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Car Pool"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/lblRequestTime1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Weekdays"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lblRequestTitle1" />
+
+                        <TextView
+                            android:id="@+id/lblRequestDetails1"
+                            android:layout_width="160dp"
+                            android:layout_height="71dp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Need someone to car pool to go to work with"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lblRequestTime1" />
+
+                        <TextView
+                            android:id="@+id/lblRequestIcon1"
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/request_event_client_bullet_point"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lblRequestDetails1" />
+
+                        <TextView
+                            android:id="@+id/lblRequestClient1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:text="Mr. Safa Ki"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/lblRequestIcon1"
+                            app:layout_constraintTop_toBottomOf="@+id/lblRequestDetails1" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/divRequest2"
+                        android:layout_width="237dp"
+                        android:layout_height="234dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/request_container">
+
+
+                        <TextView
+                            android:id="@+id/lblRequestTitle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Car Pool"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/lblRequestTime2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Weekdays"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lblRequestTitle2" />
+
+                        <TextView
+                            android:id="@+id/lblRequestDetails2"
+                            android:layout_width="160dp"
+                            android:layout_height="71dp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Need someone to car pool to go to work with"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lblRequestTime2" />
+
+                        <TextView
+                            android:id="@+id/lblRequestIcon2"
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/request_event_client_bullet_point"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lblRequestDetails2" />
+
+                        <TextView
+                            android:id="@+id/lblRequestClient2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:text="Mr. Safa Ki"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/lblRequestIcon2"
+                            app:layout_constraintTop_toBottomOf="@+id/lblRequestDetails2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
         <TextView
-            android:id="@+id/lblRequest"
+            android:id="@+id/lblEvent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:text="Requests"
-            android:textColor="#FFFFFF"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="40dp"
+            android:text="Events"
+            android:textColor="#000000"
             android:textSize="35sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.149"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/divTop" />
 
         <HorizontalScrollView
-            android:id="@+id/ScrollView3"
-            android:layout_width="389dp"
-            android:layout_height="290dp"
+            android:id="@+id/ScrollView4"
+            android:layout_width="392dp"
+            android:layout_height="270dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/lblRequest">
+            app:layout_constraintTop_toBottomOf="@id/lblEvent">
 
             <LinearLayout
+                android:id="@+id/divEventContainer"
                 android:layout_width="match_parent"
-                android:layout_height="236dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/ScrollView3">
+                android:layout_height="match_parent"
+                android:paddingLeft="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ScrollView4">
+
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/divRequest1"
-                    android:layout_width="237dp"
-                    android:layout_height="234dp"
-                    android:layout_marginStart="36dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/request_container">
-
+                    android:id="@+id/divEvent1"
+                    android:layout_width="295dp"
+                    android:layout_height="232dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/event_container"
+                    app:layout_constraintEnd_toEndOf="parent">
 
                     <TextView
-                        android:id="@+id/lblRequestTitle1"
+                        android:id="@+id/lblEventTitle1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="28dp"
                         android:layout_marginTop="16dp"
-                        android:text="Car Pool"
+                        android:text="Gotong Royong"
                         android:textColor="#FFFFFF"
                         android:textSize="25sp"
                         android:textStyle="bold"
@@ -65,22 +256,22 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/lblRequestTime1"
+                        android:id="@+id/lblEventTime1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="28dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="20dp"
                         android:text="Weekdays"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lblRequestTitle1" />
+                        app:layout_constraintTop_toBottomOf="@+id/lblEventTitle1" />
 
                     <TextView
-                        android:id="@+id/lblRequestDetails1"
-                        android:layout_width="160dp"
-                        android:layout_height="71dp"
+                        android:id="@+id/lblEventDetails1"
+                        android:layout_width="239dp"
+                        android:layout_height="54dp"
                         android:layout_marginStart="28dp"
                         android:layout_marginTop="8dp"
                         android:text="Need someone to car pool to go to work with"
@@ -88,49 +279,49 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lblRequestTime1" />
+                        app:layout_constraintTop_toBottomOf="@+id/lblEventTime1" />
 
                     <TextView
-                        android:id="@+id/lblRequestIcon1"
+                        android:id="@+id/lblEventIcon1"
                         android:layout_width="40sp"
                         android:layout_height="40sp"
-                        android:layout_marginStart="28dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="16dp"
                         android:background="@drawable/request_event_client_bullet_point"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lblRequestDetails1" />
+                        app:layout_constraintTop_toBottomOf="@+id/lblEventDetails1" />
 
                     <TextView
-                        android:id="@+id/lblRequestClient1"
+                        android:id="@+id/lblEventClient1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
                         android:text="Mr. Safa Ki"
                         android:textColor="#FFFFFF"
                         android:textSize="25sp"
                         android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/lblRequestIcon1"
-                        app:layout_constraintTop_toBottomOf="@+id/lblRequestDetails1" />
+                        app:layout_constraintStart_toEndOf="@+id/lblEventIcon1"
+                        app:layout_constraintTop_toBottomOf="@+id/lblEventDetails1" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/divRequest2"
-                    android:layout_width="237dp"
-                    android:layout_height="234dp"
-                    android:layout_marginStart="36dp"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/request_container">
-
+                    android:id="@+id/divEvent2"
+                    android:layout_width="295dp"
+                    android:layout_height="232dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/event_container"
+                    app:layout_constraintEnd_toEndOf="parent">
 
                     <TextView
-                        android:id="@+id/lblRequestTitle2"
+                        android:id="@+id/lblEventTitle2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="28dp"
                         android:layout_marginTop="16dp"
-                        android:text="Car Pool"
+                        android:text="Gotong Royong"
                         android:textColor="#FFFFFF"
                         android:textSize="25sp"
                         android:textStyle="bold"
@@ -138,22 +329,22 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/lblRequestTime2"
+                        android:id="@+id/lblEventTime2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="28dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="20dp"
                         android:text="Weekdays"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lblRequestTitle2" />
+                        app:layout_constraintTop_toBottomOf="@+id/lblEventTitle2" />
 
                     <TextView
-                        android:id="@+id/lblRequestDetails2"
-                        android:layout_width="160dp"
-                        android:layout_height="71dp"
+                        android:id="@+id/lblEventDetails2"
+                        android:layout_width="239dp"
+                        android:layout_height="54dp"
                         android:layout_marginStart="28dp"
                         android:layout_marginTop="8dp"
                         android:text="Need someone to car pool to go to work with"
@@ -161,262 +352,77 @@
                         android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lblRequestTime2" />
+                        app:layout_constraintTop_toBottomOf="@+id/lblEventTime2" />
 
                     <TextView
-                        android:id="@+id/lblRequestIcon2"
+                        android:id="@+id/lblEventIcon2"
                         android:layout_width="40sp"
                         android:layout_height="40sp"
-                        android:layout_marginStart="28dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="16dp"
                         android:background="@drawable/request_event_client_bullet_point"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lblRequestDetails2" />
+                        app:layout_constraintTop_toBottomOf="@+id/lblEventDetails2" />
 
                     <TextView
-                        android:id="@+id/lblRequestClient2"
+                        android:id="@+id/lblEventClient2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
                         android:text="Mr. Safa Ki"
                         android:textColor="#FFFFFF"
                         android:textSize="25sp"
                         android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/lblRequestIcon2"
-                        app:layout_constraintTop_toBottomOf="@+id/lblRequestDetails2" />
+                        app:layout_constraintStart_toEndOf="@+id/lblEventIcon2"
+                        app:layout_constraintTop_toBottomOf="@+id/lblEventDetails2" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </LinearLayout>
         </HorizontalScrollView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <TextView
-        android:id="@+id/lblEvent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="40dp"
-        android:text="Events"
-        android:textColor="#000000"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divTop" />
-
-    <ScrollView
-        android:id="@+id/ScrollView4"
-        android:layout_width="392dp"
-        android:layout_height="270dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lblEvent">
-
         <LinearLayout
-            android:id="@+id/divEventContainer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingLeft="50dp"
+            android:id="@+id/divFooter"
+            android:layout_width="395dp"
+            android:layout_height="82dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ScrollView4">
 
+            <ImageView
+                android:id="@+id/imgHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#42E6CF"
+                app:srcCompat="@mipmap/home_icon_foreground" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/divEvent1"
-                android:layout_width="295dp"
-                android:layout_height="232dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="48dp"
-                android:background="@drawable/event_container"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divEventContainer">
+            <ImageView
+                android:id="@+id/imgMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/map_icon_foreground" />
 
-                <TextView
-                    android:id="@+id/lblEventTitle1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Gotong Royong"
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imgPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/phone_icon_foreground" />
 
-                <TextView
-                    android:id="@+id/lblEventTime1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Weekdays"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lblEventTitle1" />
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/profile_icon_foreground" />
 
-                <TextView
-                    android:id="@+id/lblEventDetails1"
-                    android:layout_width="239dp"
-                    android:layout_height="54dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Need someone to car pool to go to work with"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lblEventTime1" />
-
-                <TextView
-                    android:id="@+id/lblEventIcon1"
-                    android:layout_width="40sp"
-                    android:layout_height="40sp"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/request_event_client_bullet_point"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lblEventDetails1" />
-
-                <TextView
-                    android:id="@+id/lblEventClient1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Mr. Safa Ki"
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toEndOf="@+id/lblEventIcon1"
-                    app:layout_constraintTop_toBottomOf="@+id/lblEventDetails1" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/divEvent2"
-                android:layout_width="295dp"
-                android:layout_height="232dp"
-                android:layout_marginTop="52dp"
-                android:layout_marginEnd="48dp"
-                android:background="@drawable/event_container"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divEvent1">
-
-                <TextView
-                    android:id="@+id/lblEventTitle2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Gotong Royong"
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/lblEventTime2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Weekdays"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lblEventTitle2" />
-
-                <TextView
-                    android:id="@+id/lblEventDetails2"
-                    android:layout_width="239dp"
-                    android:layout_height="54dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Need someone to car pool to go to work with"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lblEventTime2" />
-
-                <TextView
-                    android:id="@+id/lblEventIcon2"
-                    android:layout_width="40sp"
-                    android:layout_height="40sp"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/request_event_client_bullet_point"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lblEventDetails2" />
-
-                <TextView
-                    android:id="@+id/lblEventClient2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Mr. Safa Ki"
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toEndOf="@+id/lblEventIcon2"
-                    app:layout_constraintTop_toBottomOf="@+id/lblEventDetails2" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
-    </ScrollView>
-
-    <LinearLayout
-        android:id="@+id/divFooter"
-        android:layout_width="395dp"
-        android:layout_height="82dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ScrollView4">
-
-        <ImageView
-            android:id="@+id/imgHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#42E6CF"
-            app:srcCompat="@mipmap/home_icon_foreground" />
-
-        <ImageView
-            android:id="@+id/imgMap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@mipmap/map_icon_foreground" />
-
-        <ImageView
-            android:id="@+id/imgPhone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@mipmap/phone_icon_foreground" />
-
-        <ImageView
-            android:id="@+id/imgProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@mipmap/profile_icon_foreground" />
-
-    </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
