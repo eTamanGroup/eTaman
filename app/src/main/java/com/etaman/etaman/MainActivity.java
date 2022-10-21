@@ -11,9 +11,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        switchRegisterActivity();
-        switchResetPasswordActivity();
+        setContentView(R.layout.activity_requests_events);
+        // switchRegisterActivity();
+        // switchResetPasswordActivity();
     }
 
     private void switchRegisterActivity() {
