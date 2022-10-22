@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Etaman</string>
+    <string name="app_name">eTaman</string>
+    <string name="login_credentialbox_emailusername">Emel / Nama pengguna</string>
+    <string name="login_credentialbox_email">Emel</string>
+    <string name="login_credentialbox_username">Nama pengguna</string>
+    <string name="login_heading_login">Log masuk</string>
+    <string name="login_heading_signup">Daftar</string>
+    <string name="login_forgotpassword_question">Lupa kata laluan?</string>
+    <string name="login_traverse_signup_question">Tiada akaun?</string>
+    <string name="login_traverse_login_question">Sudah mempunyai akaun?</string>
+    <string name="login_confirmation_title">Kami telah menghantar emel pengesahan ke</string>
+    <string name="login_confirmation_description">Sila ikuti pautan di dalam emel untuk melengkapkan pendaftaran anda</string>
+    <string name="login_traverse_login">Kembali ke log masuk</string>
+    <string name="login_heading_resetpassword">Tetap semula kata laluan</string>
+    <string name="login_resetpassword_description_instructions">Isikan emel yang berkait dengan akaun anda untuk menerima arahan penetapan semula kata laluan</string>
+    <string name="login_resetpassword_emailaddress">Alamat emel</string>
+    <string name="login_resetpassword_exampleemail">example@email.com</string>
+    <string name="login_resetpassword_sendinstructions">Hantar arahan</string>
+    <string name="login_resetpassword_title">Pautan tetapan semula telah dikirim ke</string>
+    <string name="login_resetpassword_description_furtherinstructions">Sila ikuti pautan di dalam emel untuk menetap semula kata laluan anda</string>
+    <string name="home_request_title">Permintaan</string>
+    <string name="home_events_title">Peristiwa</string>
+    <string name="general_weekdays">Hari minggu</string>
+    <string name="general_weekends">Hujung minggu</string>
+    <string name="map_title">Peta Aktiviti</string>
+    <string name="map_report_counter">Laporan</string>
+    <string name="general_date">Tarikh:</string>
+    <string name="general_time">Masa</string>
+    <string name="map_report_viewreport">Lihat laporan</string>
+    <string name="map_createticket">Mulakan tiket</string>
+    <string name="map_report_reportas">Lapor sebagai</string>
+    <string name="map_report_anonymous">Tanpa nama</string>
+    <string name="map_report_selectcategory">Pilih kategori</string>
+    <string name="map_report_addmedia">Tambah gambar / video</string>
+    <string name="map_report_submit">Hantar laporan</string>
+    <string name="map_report_cancel">Batal</string>
 </resources>

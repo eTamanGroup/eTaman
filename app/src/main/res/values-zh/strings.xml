@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Etaman</string>
+    <string name="app_name">eTaman</string>
     <string name="login_credentialbox_emailusername">电邮 / 昵称</string>
     <string name="login_credentialbox_email">电邮</string>
     <string name="login_credentialbox_username">昵称</string>

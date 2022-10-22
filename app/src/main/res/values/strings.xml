@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Etaman</string>
+    <string name="app_name" translatable="false">eTaman</string>
     <string name="login_credentialbox_emailusername">Email / Username</string>
     <string name="login_credentialbox_email">Email</string>
     <string name="login_credentialbox_username">Username</string>
@@ -8,13 +8,13 @@
     <string name="login_forgotpassword_question">Forgot Password?</string>
     <string name="login_traverse_signup_question">Don\'t have an account?</string>
     <string name="login_traverse_login_question">Already have an account?</string>
-    <string name="login_confirmation_title">We have sent an email confirmation to</string>
+    <string name="login_confirmation_title">We have sent a confirmation email to</string>
     <string name="login_confirmation_description">Please follow the link in the email to complete your registration</string>
     <string name="login_traverse_login">Back to login</string>
     <string name="login_heading_resetpassword">Reset password</string>
-    <string name="login_resetpassword_description_instructions">Enter the email associated with your account and we’ll send an email with instructions to reset my password</string>
+    <string name="login_resetpassword_description_instructions">Enter the email associated with your account and we’ll send an email with instructions to reset your password</string>
     <string name="login_resetpassword_emailaddress">Email Address</string>
-    <string name="login_resetpassword_exampleemail">example@email.com</string>
+    <string name="login_resetpassword_exampleemail" translatable="false">example@email.com</string>
     <string name="login_resetpassword_sendinstructions">Send instructions</string>
     <string name="login_resetpassword_title">We have sent a reset link to</string>
     <string name="login_resetpassword_description_furtherinstructions">Please follow the link in the email to reset your password</string>
