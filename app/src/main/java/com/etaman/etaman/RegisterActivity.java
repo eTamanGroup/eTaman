@@ -15,7 +15,7 @@ public class RegisterActivity extends AppCompatActivity {
     private String username;
     private String password;
     private String email;
-    private ApiRepository api = new ApiRepository();
+    private ApiRepository api = ApiRepository.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
