@@ -1,7 +1,5 @@
 package com.etaman.etaman;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -10,39 +8,33 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+import java.io.IOException;
+
+public class RegisterActivity extends AppCompatActivity {
     private String username;
     private String password;
+    private String email;
     private ApiRepository api = new ApiRepository();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        switchRegisterActivity();
-        switchResetPasswordActivity();
+        setContentView(R.layout.activity_register);
+
+        switchLoginActivity();
         getUsername();
         getPassword();
-        submitLogin();
+        getEmail();
+        submitRegistration();
     }
 
-    private void switchRegisterActivity() {
-        TextView txtRegister = findViewById(R.id.txtRegister);
-        txtRegister.setOnClickListener(new View.OnClickListener() {
+    private void switchLoginActivity() {
+        TextView txtLogin = findViewById(R.id.txtLogin);
+        txtLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
-
-    private void switchResetPasswordActivity() {
-        TextView txtForgotPassword = findViewById(R.id.txtForgotPassword);
-        txtForgotPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ResetPasswordActivity.class);
+                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -84,16 +76,32 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void submitLogin() {
-        Button btnLogin = findViewById(R.id.btnLogin);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+    private void getEmail() {
+        TextView txtEmail = findViewById(R.id.txtEmail);
+        txtEmail.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                email = txtEmail.getText().toString();
+            }
+        });
+    }
+
+    private void submitRegistration() {
+        Button btnRegister = findViewById(R.id.btnRegister);
+        btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                api.loginUserAPI(username, password);
-                if (api.userInfo != null) {
-                    Intent intent = new Intent(MainActivity.this, RequestsEventsActivity.class);
-                    startActivity(intent);
-                }
+                api.registerUserAPI(username, email, password);
+                Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
