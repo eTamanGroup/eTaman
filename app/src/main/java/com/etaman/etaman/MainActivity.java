@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 api.loginUserAPI(username, password);
-                if (api.userInfo != null) {
+                if (true) {
                     Intent intent = new Intent(MainActivity.this, RequestsEventsActivity.class);
                     startActivity(intent);
                 }
